@@ -8,3 +8,36 @@
 [![MasterHead](Screenshot from 2022-12-22 21-20-15.jpg)]()
  <br><br>
 [![MasterHead](hi.jpg)]()
+<br><br>
+[![MasterHead](Screenshot from 2022-12-22 21-20-15.jpg)]()
+ <br><br>
+[![MasterHead](hi.jpg)]()
+<br><br>
+[![MasterHead](Screenshot from 2022-12-22 21-20-15.jpg)]()
+ <br><br>
+[![MasterHead](hi.jpg)]()
+<br><br>
+[![MasterHead](Screenshot from 2022-12-22 21-20-15.jpg)]()
+ <br><br>
+[![MasterHead](hi.jpg)]()
+<br><br>
+[![MasterHead](Screenshot from 2022-12-22 21-20-15.jpg)]()
+ <br><br>
+[![MasterHead](hi.jpg)]()
+
+<p>
+
+This Ecoomerce website was made to help you know more about the benefits of e-business. The online marketplace is a good platform for you to expand your business. know i will going to explain what kind of advantages there are by sharing what we know about online selling. these are the plus points we will talk about.
+
+1. Faster buying process
+2. Store and product listing creation
+3. Cost reduction
+4. Affordable advertising and marketing
+5. Flexibility for customers
+6. No reach limitations
+7. Product and price comparison
+8. Faster response to buyer/market demands
+9. Several payment modes
+10. Enables easy exports
+
+</P>
