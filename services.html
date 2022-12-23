@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Electronic'Villa</title>
+    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #f4511e;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(buy1.png);
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+      
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #f4511e !important;
+    background-color: deepskyblue;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: black;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #f4511e !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: dimgray!important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #f4511e !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+        <a href="index.html"><img src="dribble_cart.gif"style="width:15%"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">BRANDS</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+     <br> <br> <br> <br>
+  <h1>Electronics'Villa</h1> 
+    <br> <br> <br>
+  <p></p> 
+  <form>
+
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger"><a href="laptops.html" class="hero-btn">Buy now</a>
+   </button>
+      </div>
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company<i class="fa fa-building-o" aria-hidden="true"></i></h2><br>
+      <h4>We are the best dealers in mobile selling.We are provide best brands within reasonable price we are provides scratch rewards & we ensure to our coustomers if product will not usefull or not work in correct manner then,it will replace within 7days without any extra cost.We also provide money back guaranty + one year warrenty on every products. We are deliver your product at your homes within 4_5 days  (exceptinal national holidays) and if product was not in well condition or you are not satisfide with so, you can just recored your video while opening the product or iteam then you send that video on our @mail or you can directly contact  to our technical team. In case of product replacement or money back you can contact directly us & we ensure you that  money will be transfer within 10days in your account!!...
+                    .</p>
+      <br><button class="btn btn-default btn-lg"><a href="Contact.html" class="hero-btn">Get in Touch</a></button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Global Network</h2><br>
+      <h4><strong>Electronics</strong> Today, the mobile phone is not just a mobile phone; it has become a tool to complete a variety of tasks. Developers and engineers were upgrading mobile phone technology day by day.Social media like Facebook, Instagram, Twitter, Pinterest, LinkedIn have changed the world of communication with relatives and friends.</h4><br>
+      <p><strong>VISION:</strong> Our vision to provide elctronic's iteams at very reasonable peice , We are deals with diffrent types of brands which is avilables in the world like Apple,hp,samsung,mi,real me,1+,Lenovo,Dell.We provides our coustomers top brands iteams with reasonable price $ & we belives coustomers satisfaction.We provides you different types of mobile<br> phones,laptops,headphones,smart watchs etc.we provide </p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>POWER</h4>
+      <p>
+Verification uses methods like reviews, walkthroughs, inspections, and desk- checking etc. 	It uses methods like Black Box Testing, White Box Testing, and non-functional testing Whether the software conforms to specification is checked 	It checks whether the software meets the requirements and expectations of a customer.iteam does verification and make sure that the software is as per the requirement in the SRS document.With the involvement of testing team validation is executed on software code.I</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>Care of your device</h4>
+      <p>We are best Sealler Because We gave best deals to our Costomers.We are the best dealers in mobile selling.We are provide best brands within reasonable price we are provides scratch rewards and we ensure to our coustomers if product will not usefull or not work in correct manner then,it will     replace within 7days without any extra cost.We also provide money back guaranty + one year warrenty on every products</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>Avilable Brands</h4>
+      <p>We are deals with diffrent types of brands which is avilables in the world like Apple,hp,samsung,mi,real me,1+,Lenovo,Dell.We provides our coustomers top brands iteams with reasonable price $ & we belives coustomers satisfaction.We provides you different types of mobile phones,laptops,headphones,smart watchs etc.we provide</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>Anti-virus</h4>
+      <p>Working, Shopping and Banking from Home?<br>
+Get the online privacy and security you need
+Help protect your personal information with Norton 360 where you get all-in-one protection, including a Secure VPN with bank grade encryption and device security including anti-virus, SafeCam for PC and more.Norton Security is now Norton 360 with
+protection beyond devices.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>We are world largest Sealler in Electronic's Products Because We gave best deals to our Costomers.We are the best dealers in mobile selling.We are provide best brands within reasonable price we are provides scratch rewards & we ensure to our coustomers if product will not usefull or not work in correct manner then,it will replace within 7days without any extra cost.We also provide money back guaranty + one year warrenty on every products.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">Technical Support</h4>
+      <p>We are provide best brands within reasonable price we are provides scratch rewards and we ensure to our coustomers if product will not usefull or not work in correct manner then,it will replace within 7days without any extra cost.We also provide money back guaranty + one year warrenty on every products & we have fully technical supports to our users. </p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2></h2><br>
+  <h4>What we are provides</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="w2.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Laptop'Brands</strong></p>
+        <p> we have diffrent types of brands which is avilables in laptops the world like Apple,hp,samsung,Lenovo,Dell..</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="i2.jpg" alt="New York" width="400" height="500">
+        <p><strong>Mobile Brands</strong></p>
+        <p>we have diffrent types of brands which is avilables in cell phones the world like Apple,samsung,mi,real me,1+,Lenovo,Oppo,vivo,Nokia,MOto,etc.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="w1.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>Watchs Brands</strong></p>
+        <p>we have diffrent types of brands which is avilables in Smart watchs the world like Apple,samsung,mi,real meNokia,MOto,Fasttrack,Gshock. </p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>Top Brands </h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4><img src="lap1.jpeg" alt="San Francisco" width="400" height="300"><span><br>Apple Mca book<br>2.49000/-₹</span></h4>
+      </div>
+      <div class="item">
+        <h4><img src="lap3.jpeg" alt="San Francisco" width="400" height="300"><br>Apple Mca book pro<br>3.49000/-₹+Gst<span></span></h4>
+      </div>
+      <div class="item">
+        <h4><img src="lap7.jpeg" alt="San Francisco" width="400" height="300"><br><span>Lenovo Mx<br>79000/-₹</span></h4>
+      </div>
+        <div class="item">
+        <h4><img src="lap4.jpeg" alt="San Francisco" width="400" height="300"><br><span>hp touch tab<br>4.89000/-₹</span></h4>
+      </div>
+        <div class="item">
+        <h4><img src="lap5.jpeg" alt="San Francisco" width="400" height="300"><br><span>Dell Fold <br>1.59000/-₹</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>paid service</h2>
+    <h4>We are provide Extra paid service's maintinance 1year insurence,anti-virus,& paid softwares & applications<br>We are provideing paid services in three categories..</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>200₹</strong>Service charge</p>
+          <p><strong>1500₹</strong>one year warrenty</p>
+          <p><strong>500₹</strong>3months anti-virus</p>
+          <p><strong>120₹</strong>GST/-</p>
+          <p><strong>Total<br></strong> 2350₹</p>
+        </div>
+        <div class="panel-footer">
+          <h3>199₹/-</h3>
+          <h4>per month</h4>
+            <a href="Contact.html"><button class="btn btn-lg">Contact</button></a>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+         <p><strong>200₹</strong>Service charge</p>
+          <p><strong>2500₹</strong>1year warrenty+gaurentee</p>
+          <p><strong>500₹</strong>3months anti-virus</p>
+          <p><strong>120₹</strong>GST/-</p>
+          <p><strong>Total<br></strong> 3350₹</p>
+        </div>
+        <div class="panel-footer">
+          <h3>400₹/-</h3>
+          <h4>per month</h4>
+          <a href="Contact.html"><button class="btn btn-lg">Contact</button></a>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>800₹</strong>Service charge</p>
+          <p><strong>5000₹</strong>2years replace gaurentee</p>
+          <p><strong>300₹</strong>3years anti-virus</p>
+          <p><strong>1200₹</strong>GST/-</p>
+          <p><strong>Total<br></strong> 10,000₹</p>
+        </div>
+        <div class="panel-footer">
+          <h3>1127₹/-</h3>
+          <h4>per month</h4>
+          <a href="Contact.html"><button class="btn btn-lg">Contact</button></a>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+
+      <h2 class="text-center">Contact us and we'll get back to you within 24 hours.</h2>
+    <h2 class="text-center"></h2>
+      <a href="https://goo.gl/maps/NDDmSQEbQy9FpNmv9" title="Visit electronics villa"> <h2 class="text-center"><i class="fa fa-map-marker" style="font-size:48px;color:red"><span class="glyphicon glyphicon-map-marker"></span></i>Electonics villa</h2></a>
+      <h3 class="text-center"><span class="glyphicon glyphicon-phone"></span>+1100645477</h3> 
+    <a href=""> <h3 class="text-center"><span class="glyphicon glyphicon-envelope"></span>elctronicsvilla@gmail.com</h3> </a> 
+    </div>
+    
+  </div>
+
+
+<!-- Image of location/map -->
+<img src="logback.gif" class="w3-image w3-greyscale-min" style="width:50%">
+    <img src="serbg.png" class="w3-image w3-greyscale-min" style="width:45%">
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+    <p>Made with  <i class="fas fa-heart"></i>  By Electronic's Villa  </p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

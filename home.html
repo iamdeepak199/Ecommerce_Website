@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url();
+  font-family: "Lato", sans-serif;
+}
+    
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: skyblue;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    .header{
+        background-color: black;
+        color: white;
+        padding: 8px 0px 6px 40px;
+    }
+    
+    .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color:  white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.topnav a:hover {
+  background-color:  #ddd;
+  color: black;
+}
+    .row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color:#aaa;
+  width: 50%;
+  padding: 25px;
+}
+.about-section {
+  padding: 80px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:lightskyblue;
+   color: white;
+   text-align: center;
+}
+
+</style>
+</head>
+<body>
+    
+     <div class="topnav">
+      <a class="active" href="home.html"><i class="fa fa-fw fa-home"></i>HOME</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2></h2>
+</div>
+    
+
+<div id="mySidenav" class="sidenav">
+    <header>  </header>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="aboutus.html">About Us<i class="fa fa-id-card-o" aria-hidden="true" style="font-size:25px;color:blue"></i></a>
+  <a href="services.html">Services<i class="fa fa-handshake-o" aria-hidden="true"style="font-size:25px;color: cornflowerblue;"></i></a>
+  <a href="login.html">logini <i class="fa fa-user-circle" aria-hidden="true"style="font-size:25px;color:white "></i></a>
+  <a href="contact.html">Contact<i class="fa fa-fw fa-envelope" style="font-size:25px;color:yellow"></i></a>
+  <a href="offers.html" class="right">Offers<i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:25px;color:darkgrey"></i></a>
+  <a href="special.html" class="right">specical offers<i class="fa fa-gift" style="font-size:35px;color:red"></i></a>
+</div>
+</div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Services</span>
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+
+</script>
+    
+<img src ="elec.gif" height="0%" width="100%" >
+   
+
+<div class="footer">
+  <p>
+    <marquee>**********Electronic Villa**********</marquee>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</p>
+</div>
+</body>
+</html> 
+
+
+
+
